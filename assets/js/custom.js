@@ -203,20 +203,25 @@
 	});
 
 	function onScroll(event){
-	    var scrollPos = $(document).scrollTop();
-	    $('.nav a').each(function () {
-	        var currLink = $(this);
-	        var refElement = $(currLink.attr("href"));
-	        if (refElement.offset().top <= scrollPos && refElement.offset().top + refElement.height() > scrollPos) {
- 		   $('.nav ul li a').removeClass("active");
- 		   currLink.addClass("active");
-		}
-	        else{
-	            currLink.removeClass("active");
-	        }
-	    });
-	}
+    var scrollPos = $(document).scrollTop();
+    $('.nav a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
 
+        // If the target element exists and has offset
+        if (refElement.length && refElement.offset()) {
+            var refTop = refElement.offset().top;
+            var refBottom = refTop + refElement.outerHeight();
+
+            if (refTop <= scrollPos && refBottom > scrollPos) {
+                $('.nav ul li a').removeClass("active");
+                currLink.addClass("active");
+            } else {
+                currLink.removeClass("active");
+            }
+        }
+    });
+}
 
 	// Page loading animation
 	$(window).on('load', function() {
