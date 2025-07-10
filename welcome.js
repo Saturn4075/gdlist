@@ -1,1 +1,1 @@
-document.getElementById("welcome").innerText = "Welcome to My Website!";
+document.getElementById("welcomeText").innerText = "Welcome To Sanchir's Page";
