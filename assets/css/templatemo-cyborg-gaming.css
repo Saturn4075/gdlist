@@ -1753,10 +1753,3 @@ body {
     width: 16%;
   }
 }
-
-.nav {
-  display: block !important;
-}
-.menu-trigger {
-  display: none !important;
-}
