@@ -16,5 +16,5 @@ function showRandomVideo() {
   const randomLink = videos[randomIndex];
 
   // Redirect to that link
-  window.location.href = randomLink;
+   window.open(randomLink, "_blank");
 }
