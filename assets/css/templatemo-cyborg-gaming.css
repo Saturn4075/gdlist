@@ -179,7 +179,7 @@ p {
 .random-button {
   font-size: 14px;
   color: #fff;
-  background-color: #e75e8d; /* different color (green in this case) */
+  background-color: #0dae3f; /* different color (green in this case) */
   padding: 12px 30px;
   display: inline-block;
   border-radius: 25px;
@@ -195,7 +195,7 @@ p {
 
 .random-button:hover {
   background-color: #fff;
-  color: #4caf50;
+  color: #0dae3f;
 }
 
 .main-border-button a {
