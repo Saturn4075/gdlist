@@ -1224,7 +1224,7 @@ Live Stream Style
 
 .live-stream .hover-effect .live a { 
   position: absolute;
-  background-color: rgba(236, 96, 144, 0.9);
+  background-color: rgba(39, 169, 245, 0.8);
   padding: 5px 10px;
   border-radius: 23px;
   color: #fff;
@@ -1246,7 +1246,7 @@ Live Stream Style
 }
 
 .live-stream .hover-effect ul li a {
-  background-color: rgba(236, 96, 144, 0.9);
+  background-color: rgba(39, 169, 245, 0.8);
   padding: 5px 10px;
   border-radius: 23px;
   color: #fff;
